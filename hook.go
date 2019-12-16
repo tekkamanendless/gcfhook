@@ -63,7 +63,7 @@ func New() (*GoogleCloudFunctionHook, error) {
 
 // NewForRequest creates a new hook that will include the "execution ID" of the request
 // as a label with each log message.
-func NewForRequest(r http.Request) (*GoogleCloudFunctionHook, error) {
+func NewForRequest(r *http.Request) (*GoogleCloudFunctionHook, error) {
 	hook, err := New()
 	if err != nil {
 		return nil, err
