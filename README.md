@@ -1,7 +1,7 @@
 # gcfhook
 Google Cloud Function hook for [logrus](https://github.com/sirupsen/logrus).
 
-If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredloghook](https://github.com/tekkamanendless/gcfstructuredloghook).
+If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredlogformatter](https://github.com/tekkamanendless/gcfstructuredlogformatter).
 
 ## Warning
 This was originally intended to be used with Go 1.11 Cloud Functions, where the following environment variables were automatically defined:
@@ -13,7 +13,7 @@ This was originally intended to be used with Go 1.11 Cloud Functions, where the 
 However, as of Go 1.13 Cloud Functions, these environment variables are no longer provided.
 You may, of course, define them yourself and continue to use this package.
 
-If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredloghook](https://github.com/tekkamanendlessgcfstructuredloghook).
+If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredlogformatter](https://github.com/tekkamanendlessgcfstructuredlogformatter).
 
 ## Usage
 This example shows how to set up logrus for Google Cloud Functions.
