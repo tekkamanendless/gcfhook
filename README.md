@@ -1,5 +1,19 @@
 # gcfhook
-Google Cloud Function hook for logrus.
+Google Cloud Function hook for [logrus](https://github.com/sirupsen/logrus).
+
+If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredloghook](https://github.com/tekkamanendless/gcfstructuredloghook).
+
+## Warning
+This was originally intended to be used with Go 1.11 Cloud Functions, where the following environment variables were automatically defined:
+
+* `FUNCTION_NAME`; this is the name of the Cloud Function.
+* `FUNCTION_REGION`; this is the region of the Cloud Function.
+* `GCP_PROJECT`; this is the Google Cloud project ID.
+
+However, as of Go 1.13 Cloud Functions, these environment variables are no longer provided.
+You may, of course, define them yourself and continue to use this package.
+
+If you want to use "structured logging" (where you basically output JSON messages to standard output), then please see [gcfstructuredloghook](https://github.com/tekkamanendlessgcfstructuredloghook).
 
 ## Usage
 This example shows how to set up logrus for Google Cloud Functions.
